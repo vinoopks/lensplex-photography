@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html,body{
     margin: 0;
@@ -7,6 +8,8 @@ html,body{
     overflow:hidden;
     font-size: 10px;
     background-clip: #fff;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 a{
@@ -21,6 +24,10 @@ ul,li{
 .wrapper{
     margin: 0 auto;
     padding:  1rem 6rem;
+}
+.wrapper-content{
+    margin: 0 auto;
+    padding:  1rem 12rem;
 }
 
 header{
@@ -94,6 +101,11 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
+    font-size: 3rem;
+    background-color: #1abc9c;
+    opacity: 0.6;
     
+}
+#hero div{
+    width: 50vw;
 }
