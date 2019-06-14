@@ -9,7 +9,7 @@ html,body{
     font-size: 10px;
     background-clip: #fff;
     font-family: 'Montserrat', sans-serif;
-
+    box-sizing: border-box;
 }
 
 a{
@@ -33,8 +33,7 @@ ul,li{
 header{
     width: 100vw;
     height: 50vh;
-   
-
+  
 }
 #header-bar{
     font-size: 2rem;
@@ -43,6 +42,12 @@ header{
     height: 3rem;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    padding-top: 3rem;
+    width: 100vw;
+    z-index: 999;
+    box-sizing: border-box;
+   
 }
 
 #brand{
@@ -63,12 +68,16 @@ header{
 }
 
 nav ul li{
-    margin: 1 rem;
+    margin: 1rem;
     padding: 1rem;
+    transition: ease-in-out;
 }
 
 .nav-link:hover{
     font-weight: 700;
+    color: crimson;
+    transform: scale(2);
+    
 }
 
 #user-actions{
@@ -78,10 +87,14 @@ nav ul li{
 }
 
 #user-actions ul{
-    margin: 1 rem;
-    padding: 1 rem;
+    margin: 1rem;
+    padding: 2rem;
 }
 
+#user-actions ul li{
+    margin: 1rem;
+    padding: 0.5rem 3rem;
+}
 
 
 #navigator{
@@ -91,21 +104,56 @@ nav ul li{
 }
 
 #login, #sign-up{
-    margin: 0 2 rem;
-    padding: 0 2rem;
+   
     font-weight: 300;
 }
 
 #hero{
-    height: 50vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    background-color: #1abc9c;
+    font-size: 120%;
     opacity: 0.6;
+    
     
 }
 #hero div{
     width: 50vw;
+   
+}
+
+#hero-text h1{
+    
+}
+
+.bolder{
+    font-weight: 800;
+    background-color: crimson;
+    color: #fff;
+    padding: 1rem;
+}
+
+#image-div{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 50vw;
+    
+   
+}
+.header-img{
+    width: 80%;
+   height: auto;
+   opacity: 0.7;
+   float: right;;
+}
+
+.rounded{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
 }
